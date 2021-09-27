@@ -10,8 +10,8 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/KhanParvej/Loopstudios-Landing-Page
+- Live Site URL: https://khanparvej.github.io/Loopstudios-Landing-Page
 
 ## My process
 
