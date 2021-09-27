@@ -1,0 +1,24 @@
+$breakpoints: (
+  "x-small": 300px,
+  "small": 767px,
+  "medium": 992px,
+  "large": 1200px,
+);
+
+$landscape: 500px;
+
+@mixin respond($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to-height {
+  @media (max-height: $landscape) {
+    @content;
+  }
+}

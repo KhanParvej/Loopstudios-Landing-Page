@@ -1,0 +1,11 @@
+@use "breakpoints" as b;
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+  @include b.respond("small") {
+    padding: 0 3rem;
+  }
+}

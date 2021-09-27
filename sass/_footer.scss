@@ -1,0 +1,50 @@
+@use "halpers" as h;
+@use "breakpoints" as b;
+
+.main-footer {
+  background-color: h.$color-black;
+  padding: 5rem 0;
+
+  .footer__box {
+    display: flex;
+    justify-content: space-between;
+    @include b.respond("small") {
+      flex-direction: column;
+    }
+    .footer {
+      &__logo {
+        width: 15rem;
+        @include b.respond("small") {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      &__navbar {
+        width: 40rem;
+        display: flex;
+        justify-content: space-between;
+        @include b.respond("small") {
+          width: 100%;
+          flex-direction: column;
+          padding: 2rem 0;
+          margin-bottom: 2rem;
+        }
+        &__link {
+          @include h.nav-link;
+        }
+      }
+
+      &__social {
+        display: flex;
+        justify-content: center;
+      }
+      &__svg {
+        width: 3rem;
+        margin-left: 2rem;
+      }
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+}

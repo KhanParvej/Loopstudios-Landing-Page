@@ -1,0 +1,56 @@
+@use "halpers" as h;
+@use "breakpoints" as b;
+
+.creation {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    @include b.respond("small") {
+      flex-direction: column;
+
+      margin: 4rem 0 2rem;
+      &__heading {
+        text-align: center;
+      }
+    }
+    &__see {
+      color: h.$color-black;
+      padding: 0.5rem 2rem;
+      border: 2px solid h.$color-gray;
+      border-radius: 2px;
+      text-transform: uppercase;
+      @include b.respond("small") {
+        margin: 2rem 0 1rem;
+      }
+    }
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  @include b.respond("small") {
+    grid-template-columns: 1fr;
+  }
+  &-box {
+    position: relative;
+
+    &__name {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: h.$color-white;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      @include b.respond("small") {
+        top: 60%;
+        left: 25%;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}

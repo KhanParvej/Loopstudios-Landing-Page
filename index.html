@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- relative path to main style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="header">
+          <div class="header__logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <div class="menu-bar">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="menubar icon"
+              class="menu-bar__icon--hamburger"
+            />
+            <img
+              src="./images/icon-close.svg"
+              alt="close icon"
+              class="menu-bar__icon--close hide"
+            />
+          </div>
+          <ul class="navbar hide-side">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">About</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Careers</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Events</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Products</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Support</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="showcase">
+          <h1 class="heading__primary">
+            Immersive <br />
+            experiences<br />
+            that deliver
+          </h1>
+        </div>
+      </div>
+    </header>
+    <section class="vr-project">
+      <div class="container">
+        <div class="vr-project__box">
+          <img
+            src="./images/desktop/image-interactive.jpg"
+            alt=""
+            class="vr-project__box__img"
+          />
+          <div class="vr-project__box__details">
+            <h2 class="heading__secondary">
+              The leader in <br />
+              interactive VR
+            </h2>
+            <p class="text">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="creation">
+        <div class="creation__box">
+          <h2 class="heading__secondary creation__box__heading">Our Creation</h2>
+          <a href="#" class="creation__box__see">See all</a>
+        </div>
+        <div class="gallery">
+          <!-- img one -->
+          <figure class="gallery-box">
+            <picture class="gallery-box__img">
+              <source
+                srcset="
+                  ./images/mobile/image-deep-earth.jpg  654w,
+                  ./images/desktop/image-deep-earth.jpg 256w
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/desktop/image-deep-earth.jpg"
+                alt="Image description"
+              />
+            </picture>
+            <figcaption class="gallery-box__name">Deep <br> Earth</figcaption>
+          </figure>
+          <figure class="gallery-box">
+            <picture class="gallery-box__img">
+              <source
+                srcset="
+                  ./images/mobile/image-night-arcade.jpg  654w,
+                  ./images/desktop/image-night-arcade.jpg 256w
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/desktop/image-night-arcade.jpg"
+                alt="Image description"
+              />
+            </picture>
+            <figcaption class="gallery-box__name">Night <br> Arcade</figcaption>
+          </figure>
+          <figure class="gallery-box">
+            <picture class="gallery-box__img">
+              <source
+                srcset="
+                  ./images/mobile/image-soccer-team.jpg  654w,
+                  ./images/desktop/image-soccer-team.jpg 256w
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/desktop/image-soccer-team.jpg"
+                alt="Image description"
+              />
+            </picture>
+            <figcaption class="gallery-box__name">Soccer <br> Team</figcaption>
+          </figure>
+          <figure class="gallery-box">
+            <picture class="gallery-box__img">
+              <source
+                srcset="
+                  ./images/mobile/image-grid.jpg  654w,
+                  ./images/desktop/image-grid.jpg 256w
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/desktop/image-grid.jpg"
+                alt="Image description"
+              />
+            </picture>
+            <figcaption class="gallery-box__name">The <br> Grid</figcaption>
+          </figure>
+          <figure class="gallery-box">
+            <picture class="gallery-box__img">
+              <source
+                srcset="
+                  ./images/mobile/image-from-above.jpg  654w,
+                  ./images/desktop/image-from-above.jpg 256w
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/desktop/image-from-above.jpg"
+                alt="Image description"
+              />
+            </picture>
+            <figcaption class="gallery-box__name">From Up <br> Above Vr</figcaption>
+          </figure>
+          <figure class="gallery-box">
+            <picture class="gallery-box__img">
+              <source
+                srcset="
+                  ./images/mobile/image-pocket-borealis.jpg  654w,
+                  ./images/desktop/image-pocket-borealis.jpg 256w
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/desktop/image-pocket-borealis.jpg"
+                alt="Image description"
+              />
+            </picture>
+            <figcaption class="gallery-box__name">Pocket <br> Borealis</figcaption>
+          </figure>
+          <figure class="gallery-box">
+            <picture class="gallery-box__img">
+              <source
+                srcset="
+                  ./images/mobile/image-curiosity.jpg  654w,
+                  ./images/desktop/image-curiosity.jpg 256w
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/desktop/image-curiosity.jpg"
+                alt="Image description"
+              />
+            </picture>
+            <figcaption class="gallery-box__name">The <br> Curiosity</figcaption>
+          </figure>
+          <figure class="gallery-box">
+            <picture class="gallery-box__img">
+              <source
+                srcset="
+                  ./images/mobile/image-fisheye.jpg  654w,
+                  ./images/desktop/image-fisheye.jpg 256w
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/desktop/image-fisheye.jpg"
+                alt="Image description"
+              />
+            </picture>
+            <figcaption class="gallery-box__name">The <br> Fisheye</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+    
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer__box">
+            <div class="footer">
+              <img src="./images/logo.svg" alt="footer logo" class="footer__logo">
+              <ul class="footer__navbar">
+              <li class="footer__navbar__item"><a class="footer__navbar__link" href="#">About</a></li>
+              <li class="footer__navbar__item"><a class="footer__navbar__link" href="#">Careers</a></li>
+              <li class="footer__navbar__item"><a class="footer__navbar__link" href="#">Events</a></li>
+              <li class="footer__navbar__item"><a class="footer__navbar__link" href="#">Products</a></li>
+              <li class="footer__navbar__item"><a class="footer__navbar__link" href="#">Support</a></li>
+              </ul>
+            </div>
+            <div class="footer__copy">
+              <div class="footer__social">
+                <img class="footer__svg" src="./images/icon-facebook.svg" alt="fb logo">
+                <img class="footer__svg" src="./images/icon-twitter.svg" alt="twitter logo">
+                <img class="footer__svg" src="./images/icon-pinterest.svg" alt="pinterest logo">
+                <img class="footer__svg" src="./images/icon-instagram.svg" alt="facebook logo">
+      
+              </div>
+              <p class="text footer__text">&copy; 2021 Loopstudios. All rights reserved.</p>
+            </div>
+          </div>
+        
+      </div>
+      </footer>
+    
+    
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

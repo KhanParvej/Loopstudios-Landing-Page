@@ -1,0 +1,43 @@
+@use "halpers" as h;
+@use "breakpoints" as b;
+
+p {
+  font-size: 1.5rem;
+  font-family: h.$font-alata;
+}
+
+a {
+  font-size: 1.6rem;
+  font-family: h.$font-alata;
+}
+@mixin font($size) {
+  font-size: $size;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.heading__primary {
+  display: inline-block;
+  @include font(5rem);
+  // font-size: 5rem;
+  // text-transform: uppercase;
+  // font-weight: 300;
+  color: h.$color-white;
+  padding: 2rem 10rem 1.5rem 3rem;
+  border: 2px solid h.$color-white;
+
+  @include b.respond("small") {
+    font-size: 3rem;
+    padding: 1rem 5rem 0.75rem 1.5rem;
+  }
+}
+.heading__secondary {
+  @include font(3.8rem);
+  color: h.$color-black;
+}
+.text {
+  color: h.$color-gray;
+  padding-top: 1rem;
+
+  line-height: 1.8;
+}

@@ -1,0 +1,103 @@
+@use "halpers" as h;
+@use "breakpoints" as b;
+
+.main-header {
+  height: 75vh;
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include b.respond-to-height {
+    height: 100vh;
+  }
+}
+
+.header {
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 15rem;
+  }
+  .navbar {
+    display: flex;
+    @include b.respond("small") {
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      justify-content: center;
+
+      background-color: h.$color-black;
+      width: 100%;
+      height: 75vh;
+      z-index: 5;
+      transition: all 1s ease-in-out;
+      @include b.respond-to-height {
+        height: 100%;
+      }
+    }
+
+    &__item {
+      margin-left: 3rem;
+      @include b.respond("small") {
+        width: 10vw;
+        margin-left: 5rem;
+        margin-top: 1rem;
+      }
+    }
+    &__link {
+      @include h.nav-link;
+      @include b.respond("small") {
+        align-items: flex-start;
+      }
+
+      &:active,
+      &:visited {
+        color: h.$color-white;
+      }
+      &:hover::after {
+        content: "";
+        display: block;
+        width: 3rem;
+        height: 0.3rem;
+
+        background-color: h.$color-white;
+      }
+    }
+  }
+}
+.showcase {
+  margin-top: 5rem;
+  @include b.respond-to-height {
+    margin-top: 2rem;
+  }
+}
+
+.menu-bar {
+  display: none;
+  @include b.respond("small") {
+    display: block;
+    z-index: 10;
+  }
+}
+.hide {
+  display: none !important;
+}
+
+@include b.respond("small") {
+  .hide-side {
+    transition: all 0.5s ease !important;
+    left: 100vw !important;
+    width: 0 !important;
+    .navbar__item {
+      display: none;
+      .navbar__link {
+        display: none;
+      }
+    }
+  }
+}
